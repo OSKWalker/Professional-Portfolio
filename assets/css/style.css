@@ -22,7 +22,8 @@
 
 /*Sets default font-size to 10px instead of 16px so 1rem=10px*/
 html{    
-    font-size: 62.5%; 
+    font-size: 62.5%;
+    display:flex;
 }
 
 /*Sets default body size and font settings; Creates background to cover the page */
@@ -39,6 +40,7 @@ body{
     background-attachment: fixed;          
 }
 
+/*Sets content to always fill and scale with the viewport*/
 html, body{
     max-width: 100vw;
     max-height: 100vh;
@@ -84,9 +86,13 @@ h6{
 }
 
 /*Sizes font for paragraphs and sizes their bottom margin*/
-p{
+p, ul{
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin: 0 0 1rem;
+}
+
+a{
+    color: var(--light);
 }
 
 /*Settings for my photo*/
@@ -94,8 +100,8 @@ p{
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: 7em auto;
-    width: 250px;
+    margin: 7rem auto;
+    width: 25opx;
     height: 250px;
     border: 2px solid var(--darker);
     border-radius:50%;
@@ -111,25 +117,27 @@ p{
 
 header {
     display: flex;    
-    flex-wrap:wrap;    
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: center;
     background-color: var(--darker);
     color: var(--lighter);
     border-top: 5px solid var(--light);
     border-bottom: 5px solid var(--light);
     outline: 2px solid var(--darkest);
-    width: 100vw;
-    height: 10vh;
-    position: fixed;
+    width: 100vw;    
     z-index: 10;
     
 }
 
 header h1{
-    font-size: 10vw;
-    justify-content: space-around;
-    align-content: center;
-    margin-top: 1.5vh;
-    margin-left: 10vw;
+    font-size: 10vw;    
+    margin: 1.5vh 1.5vw;
+    
+}
+
+header a {
+    margin: 1vh 1.5vw;
 }
 
 
@@ -140,20 +148,20 @@ ul li{
 }
 
 nav{
-    display: hidden;
+    
 }
 
 a:link, a:visited{
 
     text-decoration: none;
-    border: 2px var(--lighter);
+    border: 2px var(--light);
     
 
 }
 
 nav a:hover{
 
-    color: var(--darkest);
+    color: var(--lightest);
     cursor: pointer;
     font-size: 125%;
     text-decoration: underline;
@@ -164,12 +172,6 @@ a:active{
 
     color: var(--medium);
     text-shadow: 1px 1px 2px var(--lighter);
-
-}
-
-header h3{
-
-    text-align: right;
 
 }
 
@@ -184,17 +186,17 @@ section{
 section h2{
     width: 15vw;
     text-align: center;
-    clear: right;
 }
 
 section p{
     width: 75vw;
-    text-align: right;
+    justify-content: space-evenly;  
 }
 
-#portfolio{}
+#portfolio{    
+}
 
-.projects{    
+.projects{   
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
@@ -225,7 +227,7 @@ a h4{
     border: 2px solid var(--darkest);
 }
 
-
+/*
 #app1{
     background-image: url("../images/digital-marketing-meeting.jpg");
 }
@@ -246,14 +248,10 @@ a h4{
     background-image: url("../images/placeholder-4.jpg");
 }
 
-.app-prime{
-
-}
-
 .app-alt{
     display:inline-flex;
 }
-
+*/
 button, input, textarea{
     background-color: var(--lightest);
     color: var(--darkest);
