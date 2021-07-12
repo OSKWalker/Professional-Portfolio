@@ -129,7 +129,7 @@ header {
     flex-wrap:wrap;
     justify-content: center;
     align-content: center;
-    background-color: var(--darker);
+    background-color: var(--darkest);
     color: var(--lighter);
     border-top: 5px solid var(--light);
     border-bottom: 5px solid var(--light);
@@ -159,7 +159,7 @@ ul li{
 }
 
 /*Styling for contact information*/
-li p, li a{
+#phone, #linkedin{
     border: 2px solid var(--lighter);
     border-radius: 15%;
     background-color: var(--dark);
@@ -193,17 +193,12 @@ a:active{
     text-shadow: 1px 1px 2px var(--lighter);
 }
 
-/*Section border styling*/
-section{    
-    border:inherit;
-    border-radius: 5px;    
-}
-
 /*Section title styling*/
 section h2{
-    background-color: var(--dark);
+    background-color: var(--darkest);
     color: var(--lightest);
-    border: 5px solid var(--light);
+    border-top: 5px solid var(--light);
+    border-bottom: 5px solid var(--light);
     text-align: center;
 }
 
@@ -217,14 +212,15 @@ section p{
     width: 100vw;
     display: flex;
     flex-flow: column wrap;
-    justify-items: center;
-    align-items: center;
+    transition: flex-basis 500ms linear;
+    justify-content: center;
+    align-content: center;
 }
 
 /*Display settings for the project panels*/
 .projects{   
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 86vw;
+    width: 88vw;
     margin: 2rem;
     padding: 2rem;
     color: var(--darker);
@@ -254,6 +250,11 @@ section p{
     border: 2px solid var(--darkest);
 }
 
+/*Tiles glow on hover/focus*/
+.projects:hover, .projects:hover .project-label, .projects:focus, .projects:focus .project-label{
+    box-shadow: inset 0px 0px 8px var(--lighter), 0 0 15px var(--lighter);
+}
+
 /*Margins for Showcase Project label*/
 #showcase-label{
     margin: 32rem 4rem -1.5rem -4rem;
@@ -261,7 +262,7 @@ section p{
 /*Background image for showcase project*/
 #app1{
     background-image: url("../images/digital-marketing-meeting.jpg");
-    flex: 6 0 0;
+    flex: 4 0 0;
 }
 
 /*Background image for project 2*/
@@ -325,6 +326,7 @@ footer{
         margin: 2vh 3vw;
     }
 }
+/*540+*/
 
 /*Adjustments for screenwidths 653+*/
 @media screen and (min-width: 653px){
@@ -342,6 +344,7 @@ footer{
         margin: 2vh 3vw;
     }
 }
+/*653+*/
 
 /*Adjustments for screenwidths 720+*/
 @media screen and (min-width: 720px){
@@ -353,6 +356,7 @@ footer{
         font-size: auto;
     }
 }
+/*720+*/
 
 /*Adjustments for screenwidths 768+*/
 @media screen and (min-width: 768px) {
@@ -366,37 +370,79 @@ footer{
     #navMenu{
         position: absolute;
         top: 10vh;
-        right: 1rem;
+        right: 10rem; 
         justify-content: space-between;
         background: none;
         z-index: 10;
     }
+
+    /*Navlinks display inline*/
     #navMenu li{
         display:inline
     }
     
-    #navMenu li a{
-        float:left;
+    /*Navlinks padding and margins*/
+    #navMenu li a{        
         padding: 0 1rem;
         margin: 0.5rem 1rem;        
     }
     
-    #navMenu li a.top{
+    /*Removes the "top" Navlink*/
+    .top{
         display: none;
+    }
+    
+    /*Sections flex to have titles appear vertically instead of horizontally*/
+    section{
+        display: flex;
+    }
+
+    /*Altered section title styling*/
+    section h2{
+        width: 20rem;
+        margin: 0.5rem;
+        margin-left: 0;
+        background-color: var(--darkest);
+        color: var(--lightest);
+        border-right: 5px solid var(--light);        ;
+        text-align: center;
+    }
+    
+    
+    section div{
+        width: 80%;
     }
 
     .projects{
-        width: 75%;
-        justify-content: center;
-        align-content: center;
-        z-index: 1;
+        flex: 0 0 75%;
+        max-width: 75%;        
     }
+
     #showcase-label{
         margin: 27rem 4rem -1.5rem -4rem;
         padding: 1rem 0 0 0;
         font-size: auto;
     }
-    
+
+    #contact-me ul{
+        margin: 0;
+        width: 80%;
+    }
 }
+/*768+*/
 
+/*Adjustments for screenwidths 1024+*/
+@media screen and (min-width: 1024px) {
 
+    /*Repositions navlinks*/
+    #navMenu{        
+        top: 16vh;
+        right: 20rem;         
+    }
+
+    .projects{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }        
+}
+/*1024+*/
