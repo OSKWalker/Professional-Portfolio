@@ -26,6 +26,10 @@ I was able to achieve these goals mostly; however, I'm not entirely pleased with
 
 # Screenshot
 
+![Screenshot-1](./assets/images/Screenshot-1.png?raw=true "Screenshot-1")
+![Screenshot-2](./assets/images/Screenshot-1.png?raw=true "Screenshot-2")
+![Screenshot-3](./assets/images/Screenshot-1.png?raw=true "Screenshot-3")
+
 # Link to Deployed Application
 
 https://oskwalker.github.io/Professional-Portfolio/

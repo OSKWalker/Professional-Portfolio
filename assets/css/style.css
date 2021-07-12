@@ -371,7 +371,7 @@ footer{
         position: absolute;
         top: 10vh;
         right: 10rem; 
-        justify-content: space-between;
+        justify-content: space-around;
         background: none;
         z-index: 10;
     }
@@ -446,3 +446,13 @@ footer{
     }        
 }
 /*1024+*/
+
+/*Adjustments for screenwidths 1680+*/
+@media screen and (min-width: 1680px){
+
+    #navMenu{
+        top: 20vh;
+        right: 60rem;
+        justify-content: space-evenly;
+    }
+}
