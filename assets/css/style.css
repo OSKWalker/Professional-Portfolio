@@ -17,7 +17,7 @@
 
 /*Default positioning for the entire page.*/
 *{
-   position: relative;   
+   position: relative;
 }
 
 /*Sets default font-size to 10px instead of 16px so 1rem=10px*/
@@ -44,7 +44,6 @@ body{
 html, body{
     max-width: 100vw;
     max-height: 100vh;
-    overflow-x: hidden;
 }
 
 /*Default settings for all header tags*/
@@ -85,14 +84,23 @@ h6{
     font-size: 2rem;
 }
 
-/*Sizes font for paragraphs and sizes their bottom margin*/
-p, ul{
-    font-size: 1.5rem;
-    margin: 0 0 1rem;
+/*Display settings for paragraphs*/
+p{
+    display: inline;
+    justify-content: space-around;
+    text-shadow: 0.15rem 0.15rem 0.3rem var(--darkest);
 }
 
+/*Sizes font and bottom margin for paragraphs and unordered lists*/
+p, ul{
+    font-size: 1.5rem;
+    margin: 0 0 1rem;    
+}
+
+/*Color and shadows for anchors*/
 a{
     color: var(--light);
+    text-shadow: 0.15rem 0.15rem 0.3rem var(--darkest);
 }
 
 /*Settings for my photo*/
@@ -101,7 +109,7 @@ a{
     justify-content: center;
     align-content: center;
     margin: 7rem auto;
-    width: 25opx;
+    width: 250px;
     height: 250px;
     border: 2px solid var(--darker);
     border-radius:50%;
@@ -115,6 +123,7 @@ a{
 
 }
 
+/*Settings for page banner*/
 header {
     display: flex;    
     flex-wrap:wrap;
@@ -130,154 +139,251 @@ header {
     
 }
 
+/*Size and margins for my name*/
 header h1{
     font-size: 10vw;    
     margin: 1.5vh 1.5vw;
     
 }
 
-header a {
+/*Margins for "menu"*/
+#menu{    
     margin: 1vh 1.5vw;
 }
 
-
+/*Display setting for list items*/
 ul li{
     display: inline-block;
     padding: 15px 15px;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-nav{
-    
+/*Styling for contact information*/
+li p, li a{
+    border: 2px solid var(--lighter);
+    border-radius: 15%;
+    background-color: var(--dark);
+    text-shadow: 0.15rem 0.15rem 0.3rem var(--darkest)
 }
 
+/*Display setting for the menu items*/
+#contact-me li a, #navMenu a{    
+    border: 2px solid var(--lighter);
+    border-radius: 15%;
+    background-color: var(--dark);
+}
+
+/*Removes underlines from links. Adds a border for definition*/
 a:link, a:visited{
-
     text-decoration: none;
     border: 2px var(--light);
-    
-
 }
 
-nav a:hover{
-
+/*Returns underline to links, changes cursor type, and increases font-size on hover or focus*/
+a:hover, a:focus{
     color: var(--lightest);
     cursor: pointer;
     font-size: 125%;
     text-decoration: underline;
-
 }
 
+/*Changes color and adds a shadow when links are clicked*/
 a:active{
-
     color: var(--medium);
     text-shadow: 1px 1px 2px var(--lighter);
-
 }
 
-section{
-    background-color: var(--dark);
-    color: var(--lightest);
-    justify-content:left;
+/*Section border styling*/
+section{    
     border:inherit;
     border-radius: 5px;    
 }
 
+/*Section title styling*/
 section h2{
-    width: 15vw;
+    background-color: var(--dark);
+    color: var(--lightest);
+    border: 5px solid var(--light);
     text-align: center;
 }
 
+/*Width for paragraphs in sections*/
 section p{
-    width: 75vw;
-    justify-content: space-evenly;  
+    width: 75vw;  
 }
 
-#portfolio{    
-}
-
+/*Display settings for the project panels*/
 .projects{   
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
+    width: 86vw;
     margin: 2rem;
     padding: 2rem;
     color: var(--darker);
     outline: 2px solid var(--lightest);
     outline-offset: -2px;
-    transition: all 0.5s ease-in-out;
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
 }
 
-a h4{
-    width:2rem;
+/*Settings for the project labels/title tiles*/
+.project-label{
+    width: 100px;
+    height: 50px;
     min-width:50%;
+    font-size: 1.8rem;
+    justify-content: center;
+    align-content: center;
     text-align: center;
     position: relative;
     margin: 4rem 4rem -1.5rem -4rem;
-    padding: 0.5rem 1rem;
-    color: var(--darker);
+    padding: 0.5rem 0rem;
+    color: var(--lighter);
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
     background-color: var(--medium);
     border: 2px solid var(--darkest);
 }
 
-/*
+/*Margins for Showcase Project label*/
+#showcase-label{
+    margin: 32rem 4rem -1.5rem -4rem;
+}
+/*Background image for showcase project*/
 #app1{
     background-image: url("../images/digital-marketing-meeting.jpg");
+    height: 64.5vh;
 }
 
+/*Background image for project 2*/
 #app2{
     background-image: url("../images/placeholder-1.jpg");    
 }
 
+/*Background image for project 3*/
 #app3{
     background-image: url("../images/placeholder-2.jpg");
 }
 
+/*Background image for project 4*/
 #app4{
     background-image: url("../images/placeholder-3.jpg");
 }
 
+/*Background image for project 5*/
 #app5{
     background-image: url("../images/placeholder-4.jpg");
 }
 
-.app-alt{
-    display:inline-flex;
+/*Settings and stylings for the contact form*/
+.form-container{
+    text-shadow: 0.15rem 0.15rem 0.3rem var(--darkest)
 }
-*/
+
+.form-container textarea{
+    width: 90vw;
+}
+
 button, input, textarea{
     background-color: var(--lightest);
     color: var(--darkest);
 }
+/*End contact form settings and stylings*/
 
+/*Footer styling*/
 footer{
     text-align:center;
     background-color: unset;
 }
 
+/*Adjustments for screenwidths 540+*/
+@media screen and (min-width: 540px){
+    
+    /*Adjusts position of primary app label*/
+    #showcase-label{
+        margin: 38.5rem 4rem -1.5rem -4rem;
+        padding: 1rem 0 0 0;
+        font-size: auto;
+    }
+    
+    /*Repositions the menu link*/
+    #menu{
+        font-size: 3.6rem;
+        margin: 2vh 3vw;
+    }
+}
+
+/*Adjustments for screenwidths 653+*/
+@media screen and (min-width: 653px){
+
+    /*Adjusts position of primary app label*/
+    #showcase-label{
+        margin: 10rem 4rem -1.5rem -4rem;
+        padding: 1rem 0 0 0;
+        font-size: auto;
+    }
+
+    /*Repositions the menu link*/
+    #menu{
+        font-size: 3.6rem;
+        margin: 2vh 3vw;
+    }
+}
+
+/*Adjustments for screenwidths 720+*/
+@media screen and (min-width: 720px){
+
+    /*Adjusts position of primary app label*/
+    #showcase-label{
+        margin: 27rem 4rem -1.5rem -4rem;
+        padding: 1rem 0 0 0;
+        font-size: auto;
+    }
+}
+
+/*Adjustments for screenwidths 768+*/
 @media screen and (min-width: 768px) {
+    
+    /*Removes menu from the header*/
+    #menu{
+        display: none;
+    }
+
+    /*Repositions navlinks to the top of the page*/
+    #navMenu{
+        position: absolute;
+        top: 10vh;
+        right: 1rem;
+        justify-content: space-between;
+        background: none;
+        z-index: 10;
+    }
+    #navMenu li{
+        display:inline
+    }
+    
+    #navMenu li a{
+        float:left;
+        padding: 0 1rem;
+        margin: 0.5rem 1rem;        
+    }
+    
+    #navMenu li a.top{
+        display: none;
+    }
+
     .projects{
         width: 75%;
         justify-content: center;
         align-content: center;
-        float: right;
         z-index: 1;
     }
-    #app1{
-        flex: 5 0 20%;
+    #showcase-label{
+        margin: 27rem 4rem -1.5rem -4rem;
+        padding: 1rem 0 0 0;
+        font-size: auto;
     }
     
 }
 
-@media screen and (max-height: 280px){
-    header{
-        height: 25%;
-    }
-}
+
