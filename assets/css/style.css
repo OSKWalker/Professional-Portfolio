@@ -212,6 +212,15 @@ section p{
     width: 75vw;  
 }
 
+/*Settings for project flex container*/
+.portfolio{
+    width: 100vw;
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-items: center;
+}
+
 /*Display settings for the project panels*/
 .projects{   
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -252,27 +261,31 @@ section p{
 /*Background image for showcase project*/
 #app1{
     background-image: url("../images/digital-marketing-meeting.jpg");
-    height: 64.5vh;
+    flex: 6 0 0;
 }
 
 /*Background image for project 2*/
 #app2{
-    background-image: url("../images/placeholder-1.jpg");    
+    background-image: url("../images/placeholder-1.jpg");
+    flex: 1 0 0;    
 }
 
 /*Background image for project 3*/
 #app3{
     background-image: url("../images/placeholder-2.jpg");
+    flex: 1 0 0;
 }
 
 /*Background image for project 4*/
 #app4{
     background-image: url("../images/placeholder-3.jpg");
+    flex: 1 0 0;
 }
 
 /*Background image for project 5*/
 #app5{
     background-image: url("../images/placeholder-4.jpg");
+    flex: 1 0 0;
 }
 
 /*Settings and stylings for the contact form*/
