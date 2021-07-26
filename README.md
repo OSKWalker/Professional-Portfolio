@@ -6,7 +6,7 @@ Repository contains quality README file with description, screenshot, and link t
 
 # Project Description
 
-The objectie of this exercise is to produce a portfolio page from scratch utilizing core skills, such as flexbox, media queries, and CSS variables to showcase samples of my work.
+The objective of this exercise is to produce a portfolio page from scratch utilizing core skills, such as flexbox, media queries, and CSS variables to showcase samples of my work.
 
 Criteria of note include the following:
 > Ensure that a potential employer could...
