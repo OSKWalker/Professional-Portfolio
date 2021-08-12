@@ -1,53 +1,59 @@
 /* Color scheme*/
-:root{
-    --darkest: black;
-    --darker: saddlebrown;
-    --dark: sienna;
-    --medium: chocolate ;
-    --light: sandybrown;
-    --lighter: blanchedalmond;
-    --lightest: ivory;
+:root {
+  --darkest: black;
+  --darker: saddlebrown;
+  --dark: sienna;
+  --medium: chocolate;
+  --light: sandybrown;
+  --lighter: blanchedalmond;
+  --lightest: ivory;
 }
 
 /* Content highlight and background colors*/
-::selection{
-    background-color: var(--lighter);
-    color: var(--darkest);
+::selection {
+  background-color: var(--lighter);
+  color: var(--darkest);
 }
 
 /*Default positioning for the entire page.*/
-*{
-   position: relative;
+* {
+  position: relative;
 }
 
 /*Sets default font-size to 10px instead of 16px so 1rem=10px*/
-html{    
-    font-size: 62.5%;
-    display:flex;
+html {
+  font-size: 62.5%;
+  display: flex;
 }
 
 /*Sets default body size and font settings; Creates background to cover the page */
-body{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-variant: small-caps;
-    font-size: 1.8rem;
-    line-height: 1.25;
-    color: var(--lightest);
-    background-image: url("../images/placeholder-4.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;          
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-variant: small-caps;
+  font-size: 1.8rem;
+  line-height: 1.25;
+  color: var(--lightest);
+  background-image: url("../images/placeholder-4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /*Sets content to always fill and scale with the viewport*/
-html, body{
-    max-width: 100vw;
-    max-height: 100vh;
+html,
+body {
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 /*Default settings for all header tags*/
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 0.625rem;
   color: var(--lighter);
   font-weight: 700;
@@ -55,404 +61,404 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* h1 font-size 4rem=40px*/
-h1{
-    font-size: 4rem;
+h1 {
+  font-size: 4rem;
 }
 
 /* h2 font-size 3.5rem=35px*/
-h2{
-    font-size: 3.5rem;
+h2 {
+  font-size: 3.5rem;
 }
 
 /* h3 font-size 3.25rem=32.5px*/
-h3{
-    font-size: 3.25rem;
+h3 {
+  font-size: 3.25rem;
 }
 
 /* h4 font-size 2.75rem=27.5px*/
-h4{
-    font-size: 2.75rem;
+h4 {
+  font-size: 2.75rem;
 }
 
 /*h5 font-size 2.5rem=25px*/
-h5{
-    font-size: 2.5rem;
+h5 {
+  font-size: 2.5rem;
 }
 
 /*h6 font-size 2rem=20px*/
-h6{
-    font-size: 2rem;
+h6 {
+  font-size: 2rem;
 }
 
 /*Display settings for paragraphs*/
-p{
-    display: inline;
-    justify-content: space-around;
-    text-shadow: 0.15rem 0.15rem 0.3rem var(--darkest);
+p {
+  display: inline;
+  justify-content: space-around;
+  text-shadow: 0.15rem 0.15rem 0.3rem var(--darkest);
 }
 
 /*Sizes font and bottom margin for paragraphs and unordered lists*/
-p, ul{
-    font-size: 1.5rem;
-    margin: 0 0 1rem;    
+p,
+ul {
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
 }
 
 /*Color and shadows for anchors*/
-a{
-    color: var(--light);
-    text-shadow: 0.15rem 0.15rem 0.3rem var(--darkest);
+a {
+  color: var(--light);
+  text-shadow: 0.15rem 0.15rem 0.3rem var(--darkest);
 }
 
 /*Settings for my photo*/
-#hero-image{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 7rem auto;
-    width: 250px;
-    height: 250px;
-    border: 2px solid var(--darker);
-    border-radius:50%;
-    background-image: url("../images/The-Big-O.jpg");
-    background-color: var(--lighter);    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    z-index: -1;
-
+#hero-image {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 7rem auto;
+  width: 250px;
+  height: 250px;
+  border: 2px solid var(--darker);
+  border-radius: 50%;
+  background-image: url("../images/The-Big-O.jpg");
+  background-color: var(--lighter);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  z-index: -1;
 }
 
 /*Settings for page banner*/
 header {
-    display: flex;    
-    flex-wrap:wrap;
-    justify-content: center;
-    align-content: center;
-    background-color: var(--darkest);
-    color: var(--lighter);
-    border-top: 5px solid var(--light);
-    border-bottom: 5px solid var(--light);
-    outline: 2px solid var(--darkest);
-    width: 100vw;    
-    z-index: 10;
-    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--darkest);
+  color: var(--lighter);
+  border-top: 5px solid var(--light);
+  border-bottom: 5px solid var(--light);
+  outline: 2px solid var(--darkest);
+  width: 100vw;
+  z-index: 10;
 }
 
 /*Size and margins for my name*/
-header h1{
-    font-size: 10vw;    
-    margin: 1.5vh 1.5vw;
-    
+header h1 {
+  font-size: 10vw;
+  margin: 1.5vh 1.5vw;
 }
 
 /*Margins for "menu"*/
-#menu{    
-    margin: 1vh 1.5vw;
+#menu {
+  margin: 1vh 1.5vw;
 }
 
 /*Display setting for list items*/
-ul li{
-    display: inline-block;
-    padding: 15px 15px;
-    justify-content: center;
+ul li {
+  display: inline-block;
+  padding: 15px 15px;
+  justify-content: center;
 }
 
 /*Styling for contact information*/
-#phone, #linkedin{
-    border: 2px solid var(--lighter);
-    border-radius: 15%;
-    background-color: var(--dark);
-    text-shadow: 0.15rem 0.15rem 0.3rem var(--darkest)
+#phone,
+#linkedin {
+  border: 2px solid var(--lighter);
+  border-radius: 15%;
+  background-color: var(--dark);
+  text-shadow: 0.15rem 0.15rem 0.3rem var(--darkest);
 }
 
 /*Display setting for the menu items*/
-#contact-me li a, #navMenu a{    
-    border: 2px solid var(--lighter);
-    border-radius: 15%;
-    background-color: var(--dark);
+#contact-me li a,
+#navMenu a {
+  border: 2px solid var(--lighter);
+  border-radius: 15%;
+  background-color: var(--dark);
 }
 
 /*Removes underlines from links. Adds a border for definition*/
-a:link, a:visited{
-    text-decoration: none;
-    border: 2px var(--light);
+a:link,
+a:visited {
+  text-decoration: none;
+  border: 2px var(--light);
 }
 
 /*Returns underline to links, changes cursor type, and increases font-size on hover or focus*/
-a:hover, a:focus{
-    color: var(--lightest);
-    cursor: pointer;
-    font-size: 125%;
-    text-decoration: underline;
+a:hover,
+a:focus {
+  color: var(--lightest);
+  cursor: pointer;
+  font-size: 125%;
+  text-decoration: underline;
 }
 
 /*Changes color and adds a shadow when links are clicked*/
-a:active{
-    color: var(--medium);
-    text-shadow: 1px 1px 2px var(--lighter);
+a:active {
+  color: var(--medium);
+  text-shadow: 1px 1px 2px var(--lighter);
 }
 
 /*Section title styling*/
-section h2{
-    background-color: var(--darkest);
-    color: var(--lightest);
-    border-top: 5px solid var(--light);
-    border-bottom: 5px solid var(--light);
-    text-align: center;
+section h2 {
+  background-color: var(--darkest);
+  color: var(--lightest);
+  border-top: 5px solid var(--light);
+  border-bottom: 5px solid var(--light);
+  text-align: center;
 }
 
 /*Width for paragraphs in sections*/
-section p{
-    width: 75vw;  
+section p {
+  width: 75vw;
 }
 
 /*Settings for project flex container*/
-.portfolio{
-    width: 100vw;
-    display: flex;
-    flex-flow: column wrap;
-    transition: flex-basis 500ms linear;
-    justify-content: center;
-    align-content: center;
+.portfolio {
+  width: 100vw;
+  display: flex;
+  flex-flow: column wrap;
+  transition: flex-basis 500ms linear;
+  justify-content: center;
+  align-content: center;
 }
 
 /*Display settings for the project panels*/
-.projects{   
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 88vw;
-    margin: 2rem;
-    padding: 2rem;
-    color: var(--darker);
-    outline: 2px solid var(--lightest);
-    outline-offset: -2px;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:cover;
+.projects {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 88vw;
+  margin: 2rem;
+  padding: 2rem;
+  color: var(--darker);
+  outline: 2px solid var(--lightest);
+  outline-offset: -2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /*Settings for the project labels/title tiles*/
-.project-label{
-    width: 100px;
-    height: 50px;
-    min-width:50%;
-    font-size: 1.8rem;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    position: relative;
-    margin: 4rem 4rem -1.5rem -4rem;
-    padding: 0.5rem 0rem;
-    color: var(--lighter);
-    border-radius: 8px;
-    transition: all 0.5s ease-in-out;
-    background-color: var(--medium);
-    border: 2px solid var(--darkest);
+.project-label {
+  width: 100px;
+  height: 50px;
+  min-width: 50%;
+  font-size: 1.8rem;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  position: relative;
+  margin: 4rem 4rem -1.5rem -4rem;
+  padding: 0.5rem 0rem;
+  color: var(--lighter);
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  background-color: var(--medium);
+  border: 2px solid var(--darkest);
 }
 
 /*Tiles glow on hover/focus*/
-.projects:hover, .projects:hover .project-label, .projects:focus, .projects:focus .project-label{
-    box-shadow: inset 0px 0px 8px var(--lighter), 0 0 15px var(--lighter);
+.projects:hover,
+.projects:hover .project-label,
+.projects:focus,
+.projects:focus .project-label {
+  box-shadow: inset 0px 0px 8px var(--lighter), 0 0 15px var(--lighter);
 }
 
 /*Margins for Showcase Project label*/
-#showcase-label{
-    margin: 32rem 4rem -1.5rem -4rem;
+#showcase-label {
+  margin: 32rem 4rem -1.5rem -4rem;
 }
 /*Background image for showcase project*/
-#app1{
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    flex: 4 0 0;
+#app1 {
+  background-image: url("../images/Heyo-Project.png");
+  flex: 4 0 0;
 }
 
 /*Background image for project 2*/
-#app2{
-    background-image: url("../images/placeholder-1.jpg");
-    flex: 1 0 0;    
+#app2 {
+  background-image: url("../images/Weather-Dashboard.png");
+  flex: 1 0 0;
 }
 
 /*Background image for project 3*/
-#app3{
-    background-image: url("../images/placeholder-2.jpg");
-    flex: 1 0 0;
+#app3 {
+  background-image: url("../images/placeholder-2.jpg");
+  flex: 1 0 0;
 }
 
 /*Background image for project 4*/
-#app4{
-    background-image: url("../images/placeholder-3.jpg");
-    flex: 1 0 0;
+#app4 {
+  background-image: url("../images/Work-Day-Scheduler.png");
+  flex: 1 0 0;
 }
 
 /*Background image for project 5*/
-#app5{
-    background-image: url("../images/placeholder-4.jpg");
-    flex: 1 0 0;
+#app5 {
+  background-image: url("../images/Password-Generator.png");
+  flex: 1 0 0;
 }
 
 /*Settings and stylings for the contact form*/
-.form-container{
-    text-shadow: 0.15rem 0.15rem 0.3rem var(--darkest)
+.form-container {
+  text-shadow: 0.15rem 0.15rem 0.3rem var(--darkest);
 }
 
-.form-container textarea{
-    width: 90vw;
+.form-container textarea {
+  width: 90vw;
 }
 
-button, input, textarea{
-    background-color: var(--lightest);
-    color: var(--darkest);
+button,
+input,
+textarea {
+  background-color: var(--lightest);
+  color: var(--darkest);
 }
 /*End contact form settings and stylings*/
 
 /*Footer styling*/
-footer{
-    text-align:center;
-    background-color: unset;
+footer {
+  text-align: center;
+  background-color: unset;
 }
 
 /*Adjustments for screenwidths 540+*/
-@media screen and (min-width: 540px){
-    
-    /*Adjusts position of primary app label*/
-    #showcase-label{
-        margin: 38.5rem 4rem -1.5rem -4rem;
-        padding: 1rem 0 0 0;
-        font-size: auto;
-    }
-    
-    /*Repositions the menu link*/
-    #menu{
-        font-size: 3.6rem;
-        margin: 2vh 3vw;
-    }
+@media screen and (min-width: 540px) {
+  /*Adjusts position of primary app label*/
+  #showcase-label {
+    margin: 38.5rem 4rem -1.5rem -4rem;
+    padding: 1rem 0 0 0;
+    font-size: auto;
+  }
+
+  /*Repositions the menu link*/
+  #menu {
+    font-size: 3.6rem;
+    margin: 2vh 3vw;
+  }
 }
 /*540+*/
 
 /*Adjustments for screenwidths 653+*/
-@media screen and (min-width: 653px){
+@media screen and (min-width: 653px) {
+  /*Adjusts position of primary app label*/
+  #showcase-label {
+    margin: 10rem 4rem -1.5rem -4rem;
+    padding: 1rem 0 0 0;
+    font-size: auto;
+  }
 
-    /*Adjusts position of primary app label*/
-    #showcase-label{
-        margin: 10rem 4rem -1.5rem -4rem;
-        padding: 1rem 0 0 0;
-        font-size: auto;
-    }
-
-    /*Repositions the menu link*/
-    #menu{
-        font-size: 3.6rem;
-        margin: 2vh 3vw;
-    }
+  /*Repositions the menu link*/
+  #menu {
+    font-size: 3.6rem;
+    margin: 2vh 3vw;
+  }
 }
 /*653+*/
 
 /*Adjustments for screenwidths 720+*/
-@media screen and (min-width: 720px){
-
-    /*Adjusts position of primary app label*/
-    #showcase-label{
-        margin: 27rem 4rem -1.5rem -4rem;
-        padding: 1rem 0 0 0;
-        font-size: auto;
-    }
+@media screen and (min-width: 720px) {
+  /*Adjusts position of primary app label*/
+  #showcase-label {
+    margin: 27rem 4rem -1.5rem -4rem;
+    padding: 1rem 0 0 0;
+    font-size: auto;
+  }
 }
 /*720+*/
 
 /*Adjustments for screenwidths 768+*/
 @media screen and (min-width: 768px) {
-    
-    /*Removes menu from the header*/
-    #menu{
-        display: none;
-    }
+  /*Removes menu from the header*/
+  #menu {
+    display: none;
+  }
 
-    /*Repositions navlinks to the top of the page*/
-    #navMenu{
-        position: absolute;
-        top: 10vh;
-        right: 10rem; 
-        justify-content: space-around;
-        background: none;
-        z-index: 10;
-    }
+  /*Repositions navlinks to the top of the page*/
+  #navMenu {
+    position: absolute;
+    top: 10vh;
+    right: 10rem;
+    justify-content: space-around;
+    background: none;
+    z-index: 10;
+  }
 
-    /*Navlinks display inline*/
-    #navMenu li{
-        display:inline
-    }
-    
-    /*Navlinks padding and margins*/
-    #navMenu li a{        
-        padding: 0 1rem;
-        margin: 0.5rem 1rem;        
-    }
-    
-    /*Removes the "top" Navlink*/
-    .top{
-        display: none;
-    }
-    
-    /*Sections flex to have titles appear vertically instead of horizontally*/
-    section{
-        display: flex;
-    }
+  /*Navlinks display inline*/
+  #navMenu li {
+    display: inline;
+  }
 
-    /*Altered section title styling*/
-    section h2{
-        width: 20rem;
-        margin: 0.5rem;
-        margin-left: 0;
-        background-color: var(--darkest);
-        color: var(--lightest);
-        border-right: 5px solid var(--light);        ;
-        text-align: center;
-    }
-    
-    
-    section div{
-        width: 80%;
-    }
+  /*Navlinks padding and margins*/
+  #navMenu li a {
+    padding: 0 1rem;
+    margin: 0.5rem 1rem;
+  }
 
-    .projects{
-        flex: 0 0 75%;
-        max-width: 75%;        
-    }
+  /*Removes the "top" Navlink*/
+  .top {
+    display: none;
+  }
 
-    #showcase-label{
-        margin: 27rem 4rem -1.5rem -4rem;
-        padding: 1rem 0 0 0;
-        font-size: auto;
-    }
+  /*Sections flex to have titles appear vertically instead of horizontally*/
+  section {
+    display: flex;
+  }
 
-    #contact-me ul{
-        margin: 0;
-        width: 80%;
-    }
+  /*Altered section title styling*/
+  section h2 {
+    width: 20rem;
+    margin: 0.5rem;
+    margin-left: 0;
+    background-color: var(--darkest);
+    color: var(--lightest);
+    border-right: 5px solid var(--light);
+    text-align: center;
+  }
+
+  section div {
+    width: 80%;
+  }
+
+  .projects {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  #showcase-label {
+    margin: 27rem 4rem -1.5rem -4rem;
+    padding: 1rem 0 0 0;
+    font-size: auto;
+  }
+
+  #contact-me ul {
+    margin: 0;
+    width: 80%;
+  }
 }
 /*768+*/
 
 /*Adjustments for screenwidths 1024+*/
 @media screen and (min-width: 1024px) {
+  /*Repositions navlinks*/
+  #navMenu {
+    top: 16vh;
+    right: 20rem;
+  }
 
-    /*Repositions navlinks*/
-    #navMenu{        
-        top: 16vh;
-        right: 20rem;         
-    }
-
-    .projects{
-        flex: 0 0 50%;
-        max-width: 50%;
-    }        
+  .projects {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 /*1024+*/
 
 /*Adjustments for screenwidths 1680+*/
-@media screen and (min-width: 1680px){
-
-    #navMenu{
-        top: 20vh;
-        right: 60rem;
-        justify-content: space-evenly;
-    }
+@media screen and (min-width: 1680px) {
+  #navMenu {
+    top: 20vh;
+    right: 60rem;
+    justify-content: space-evenly;
+  }
 }
