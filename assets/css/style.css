@@ -1,11 +1,11 @@
 /* Color scheme*/
 :root {
   --darkest: black;
-  --darker: saddlebrown;
-  --dark: sienna;
-  --medium: chocolate;
-  --light: sandybrown;
-  --lighter: blanchedalmond;
+  --darker: rgb(9, 9, 73);
+  --dark: rgba(18, 64, 214, 0.74);
+  --medium: cornflowerblue;
+  --light: blanchedalmond;
+  --lighter: silver;
   --lightest: ivory;
 }
 
@@ -24,6 +24,7 @@
 html {
   font-size: 62.5%;
   display: flex;
+  scroll-behavior: smooth;
 }
 
 /*Sets default body size and font settings; Creates background to cover the page */
@@ -33,7 +34,7 @@ body {
   font-size: 1.8rem;
   line-height: 1.25;
   color: var(--lightest);
-  background-image: url("../images/placeholder-4.jpg");
+  background-image: url("../images/placeholder-3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
