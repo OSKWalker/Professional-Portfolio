@@ -380,8 +380,7 @@ footer {
   #navMenu {
     position: absolute;
     top: 10vh;
-    right: 10rem;
-    justify-content: space-around;
+    left: 10rem;
     background: none;
     z-index: 10;
   }
